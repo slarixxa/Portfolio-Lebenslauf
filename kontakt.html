@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--Damit Browser weiß, dass es sich um ein html-->
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Larissa Sowada</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Larissa Sowada</h1>
+      <label class="switch" title="switch modus">
+        <input
+          id="theme-toggle"
+          type="checkbox"
+          aria-label="Dark mode switch"
+        />
+        <span class="slider"></span>
+      </label>
+      <span id="theme-status" class="theme-status">Light Mode</span>
+      <nav class="header">
+        <!-- Die versteckte Checkbox, die den Zustand speichert -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
+
+        <!-- Das Label, das als Hamburger-Icon fungiert und die Checkbox umschaltet -->
+        <label for="menu-toggle" class="menu-button" title="Menü">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </label>
+
+        <!-- Das Untermenü, das geöffnet werden soll -->
+        <div id="submenu" class="submenu">
+          <a href="index.html">Startseite</a>
+          <a href="projekte.html">Projekte</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="about">
+        <h2>Über mich</h2>
+
+        <div class="platz">
+          <div class="text">
+            <p>
+              Ich bin Larissa Sowada und bin 23 Jahre alt. Ich lebe in Pulheim.
+              Vor kurzem habe ich mein 3-jähriges Studium Digital Technology &
+              Coding mit Schwerpunkt Web Development abgeschlossen. Ich habe
+              bereits mehrere Webseiten mit HTML, PHP und CSS erstellt und mit
+              WordPress und MySQL gearbeitet.
+            </p>
+          </div>
+
+          <div class="bild-container">
+            <img
+              src="bild.png"
+              alt="Bewerbungsfoto von Larissa"
+              class="ichBild"
+            />
+            <div class="animation" aria-hidden="true">Das bin ich</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="kontaktformualr">
+        <h4>Kontakt</h4>
+        <form>
+          <label>
+            Name
+            <input
+              type="text"
+              name="name"
+              id="nameKontakt"
+              placeholder="Name"
+            />
+          </label>
+          <label>
+            E-Mail
+            <input
+              type="email"
+              name="email"
+              id="emailKontakt"
+              placeholder="E-Mail"
+            />
+          </label>
+          <label>
+            Nachricht
+            <textarea
+              name="message"
+              id="messageKontakt"
+              rows="4"
+              placeholder="Deine Nachricht"
+            ></textarea>
+          </label>
+          <button type="submit" class="button">Absenden</button>
+        </form>
+      </section>
+      <label class="checkbox" title="nach oben">
+        <img id="pfeil" src="pfeil-nach-oben.png" alt="Pfeil nach oben" 0 />
+      </label>
+    </main>
+
+    <footer class="site-footer">
+      <p class="left">© 2025 Larissa</p>
+      <div class="right">
+        <div class="social">
+          <img src="insta.png" alt="Instagram" />
+          <img src="link.png" alt="LinkedIn" />
+          <img src="twitter.png" alt="Twitter" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

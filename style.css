@@ -313,6 +313,105 @@ body.dark-mode #pfeil {
   transition: opacity 0.3s ease;
 }
 
+/* --- Fun-Facts-Wolken --- */
+
+.funfacts-wrapper {
+  position: relative;
+  margin-top: 60px auto 240px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grundform der Wolken */
+.cloud {
+  position: absolute;
+  width: 320px;
+  height: 160px;
+  background: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  z-index: 3;
+  transition: transform 0.6s ease;
+  pointer-events: none; /* verhindert Klicks, damit Hover sauber triggert */
+}
+
+/* Wolken-Bauch */
+.cloud::before,
+.cloud::after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.cloud::before {
+  width: 150px;
+  height: 150px;
+  top: -50px;
+  left: 40px;
+}
+
+.cloud::after {
+  width: 130px;
+  height: 130px;
+  top: -30px;
+  right: 40px;
+}
+
+/* Startposition: perfekt übereinander */
+.cloud-left {
+  transform: translateX(-40px);
+}
+
+.cloud-right {
+  transform: translateX(40px);
+}
+
+/* Versteckter Text */
+.funfacts-hidden-text {
+  position: absolute;
+  top: 190px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Wolken fahren auseinander */
+.funfacts-wrapper:hover .cloud-left {
+  transform: translateX(-260px);
+}
+
+.funfacts-wrapper:hover .cloud-right {
+  transform: translateX(260px);
+}
+
+/* Text erscheint */
+.funfacts-wrapper:hover .funfacts-hidden-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark Mode */
+body.dark-mode .cloud {
+  background: #222;
+  color: #fff;
+}
+
+body.dark-mode .cloud::before,
+body.dark-mode .cloud::after {
+  background: #222;
+}
 /* Footer */
 .site-footer {
   display: flex;

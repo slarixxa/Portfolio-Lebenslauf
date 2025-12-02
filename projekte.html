@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--Damit Browser weiß, dass es sich um ein html-->
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Larissa Sowada</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Larissa Sowada</h1>
+      <label class="switch" title="switch modus">
+        <input
+          id="theme-toggle"
+          type="checkbox"
+          aria-label="Dark mode switch"
+        />
+        <span class="slider"></span>
+      </label>
+      <span id="theme-status" class="theme-status">Light Mode</span>
+      <nav class="header">
+        <!-- Die versteckte Checkbox, die den Zustand speichert -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
+
+        <!-- Das Label, das als Hamburger-Icon fungiert und die Checkbox umschaltet -->
+        <label for="menu-toggle" class="menu-button" title="Menü">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </label>
+
+        <!-- Das Untermenü, das geöffnet werden soll -->
+        <div id="submenu" class="submenu">
+          <a href="index.html">Startseite</a>
+          <a href="projekte.html">Projekte</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="projects container">
+        <h3>Projekte</h3>
+
+        <article class="box box1">
+          <h4>Projekt 1 — Online-Shop</h4>
+          <p>
+            Im ersten Projekt möchte ich ein Online Shop präsentieren. Diesen
+            hab ich für eine Prüfung während meines Studiums erstellt. Die erste
+            Seite zeigt verschiede Einkaufsoptionen, diese können in einen
+            Warenkorb reingetan werden. Oben am Header gibt es eine weitere
+            Seite, die Einkauskorb heißt. Dort kann eine Einkausliste erstellt
+            werden, diese werden in einer Liste dargestellt. Die Liste kann
+            gefüllt sein, wenn bei der ersten Seite Sachen in den Einkauskorb
+            reingetan wurde. Ein Feld ist auf der Seite zu finden, dort können
+            weitere Artikel in den Einkauskorb reingetan werden. Werden Dinge
+            reingeschrieben, die es nicht in den Online Shop gibt, kriegt man
+            einen Hinweis das der Artikel nicht im Online Shop gibt und fragt,
+            ob man den Artikel trotzdem zur Einkausliste hinzugefügt
+          </p>
+          <a
+            href="https://github.com/slarixxa/proj"
+            target="_blank"
+            rel="noopener"
+            >Link zum GitHub</a
+          >
+        </article>
+
+        <article class="box box2">
+          <h4>Projekt 2 — WürfelPlay</h4>
+          <p>
+            Im zweiten Projekt geht es um ein Würfel Spiel. Dort können zwei
+            Spieler ein Würfel Spiel zu einem Wettbewerb machen. Sie können die
+            Anzahl der Runden sowie die Abzahl der Würfel auswählen. Dieser
+            Würfel wird gewürfelt und gibt die Augenzahl zurück. Die höhre Zahl
+            gewinnt. Werden mehrer Würfel ausgewählt werden die Augenzahlen
+            zusammen addiert und der Spieler der die höhre Zahl hat gewinnt.
+          </p>
+          <a
+            href="https://github.com/slarixxa/WuerfelPlay_Projektarbeit"
+            target="_blank"
+            rel="noopener"
+            >Link zum GitHub</a
+          >
+        </article>
+
+        <article class="box box3">
+          <h4>Projekt 3 — Memory Game</h4>
+          <p>
+            Im dritten Projekt geht es um ein Memory Spiel. Dort wird auf Zeit
+            ein Memory Spiel gespielt.
+          </p>
+          <a
+            href="https://github.com/dtc-webentwicklung-ss23/Larissa/blob/main/Webentwicklung_Konzept_Larissa_Sowada.pdf"
+            target="_blank"
+            rel="noopener"
+            >Link zum Projekt</a
+          >
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="left">© 2025 Larissa</p>
+      <div class="right">
+        <div class="social">
+          <img src="insta.png" alt="Instagram" />
+          <img src="link.png" alt="LinkedIn" />
+          <img src="twitter.png" alt="Twitter" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
