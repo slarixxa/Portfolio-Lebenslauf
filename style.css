@@ -262,6 +262,11 @@ body.dark-mode #pfeil {
   flex-wrap: wrap;
   margin-top: 20px;
 }
+.projects h3 {
+  flex-basis: 100%; /* nimmt die ganze Zeile ein */
+  margin: 0 0 8px; /* unten etwas Abstand zu den Boxen */
+}
+
 .box {
   /*box generell angepaast*/
   flex: 1 1 300px;
@@ -311,6 +316,30 @@ body.dark-mode #pfeil {
   height: 60px;
   cursor: pointer;
   transition: opacity 0.3s ease;
+}
+
+.fragezeichen-container {
+  position: relative; /* Wichtig, um das hover-text-span zu positionieren */
+  cursor: pointer; /* Ändert den Mauszeiger in eine Hand */
+  /* Weitere Stile für das Fragezeichen */
+}
+
+.hover-text {
+  visibility: hidden; /* Text anfangs ausblenden */
+  position: absolute; /* Text außerhalb des normalen Layouts positionieren */
+  bottom: 100%; /* Obendrüber positionieren */
+  left: 50%;
+  transform: translateX(-50%); /* Zentrieren */
+  width: 150px; /* Breite des Textfelds */
+  padding: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Stellt sicher, dass der Text über anderen Elementen liegt */
+}
+
+.fragezeichen-container:hover .hover-text {
+  visibility: visible; /* Text sichtbar machen, wenn über dem Container gehovert wird */
 }
 
 /* --- Fun-Facts-Wolken --- */
