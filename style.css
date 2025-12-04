@@ -278,10 +278,10 @@ body.dark-mode #pfeil {
 
 /* Kontaktformular */
 .kontaktformualr {
-  margin: 24px auto; /* vertikaler Abstand + automatisch horizontal zentriert */
-  max-width: 360px; /* damit das Formular nicht die ganze Breite einnimmt */
-  padding: 16px; /* optional: Abstand innen */
-  text-align: center; /* optional: zentriert Text im Block */
+  margin: 24px auto; 
+  max-width: 360px; 
+  padding: 16px; 
+  text-align: center; /
 }
 .kontaktformualr form {
   display: grid;
@@ -321,7 +321,6 @@ body.dark-mode #pfeil {
 .fragezeichen-container {
   position: relative; /* Wichtig, um das hover-text-span zu positionieren */
   cursor: pointer; /* Ändert den Mauszeiger in eine Hand */
-  /* Weitere Stile für das Fragezeichen */
 }
 
 .hover-text {
@@ -368,7 +367,7 @@ body.dark-mode #pfeil {
   font-size: 1.5rem;
   z-index: 3;
   transition: transform 0.6s ease;
-  pointer-events: none; /* verhindert Klicks, damit Hover sauber triggert */
+  pointer-events: none;  
 }
 
 /* Wolken-Bauch */
